@@ -1,0 +1,41 @@
+
+nav{
+	height:55px;
+	box-shadow : 0 0 15px grey;
+	font-size: 14px;
+	text-align: right;
+}
+
+ul li{
+	display: inline-block;
+	margin-right: 15px; 
+	
+}
+img{
+	height: 50px;
+	text-align: left;
+}
+.text{
+	
+	display: block;
+	text-align:center;
+}
+
+
+
+
+.ng-invalid:not(form) {
+    border-bottom: 1px solid red;
+}
+
+form{
+	display: inline-block;
+	width: 300px;
+	
+}
+.container{
+	display: inline-block;
+	text-align: center;
+
+	justify-content: center;
+}
