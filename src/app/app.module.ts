@@ -6,9 +6,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//import { LoginComponent } from './login/login.component';
+//import { RegisterComponent } from './register/register.component';
+
 @NgModule({
-  declarations: [
+  declarations: [ // сюди добавляються компоненти
     AppComponent
+    //LoginComponent,
+	//RegisterComponent
   ],
   imports: [
     BrowserModule,

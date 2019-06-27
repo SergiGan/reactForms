@@ -27,15 +27,27 @@
  
 </div>
 
+<form [formGroup]= "userForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="email" placeholder="email">
+  <input type="password" formControlName="password" placeholder="password">
+  <input type="submit" value="send">
+</form>
+
+
+<br>
 <input [formControl]="nameControl">
+<br>
+
 <fieldset [formGroup]= "fullNameControl">
   <input formControlName="firstName" >
   <input formControlName="secondName">
 </fieldset>
+
+
 <form [formGroup]= "userListControl">
   <ul formArrayName="users">
     <li *ngFor="let userControl of userListControl.controls.user.controls; let i=index">
-      <input formControlName="{{i}}">
+      <input formControlName="{{i}}"><!-- визначення імені-->
       <button (click) ="removeUserControl(i)">delete</button>
     </li>
   </ul>
